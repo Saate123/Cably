@@ -1,0 +1,80 @@
+import { Link } from "react-router-dom";
+import {
+  FaFacebookSquare,
+  FaInstagramSquare,
+} from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+
+function Footer() {
+  return (
+    <div>
+      <div className="flex flex-wrap justify-around items-start bg-gray-100 p-10">
+        <div className="w-[80%] md:w-1/4">
+          <h4 className="text-xl font-bold text-green-800">Roader</h4>
+          <p className="leading-7 text-sm">
+            Roader is an innovative new entrant into the ride-hailing market in
+            East Africa. Operated and owned by Africans for Africans. Roader
+            brings local creativity and insights to improve the experience of
+            passengers and drivers.
+          </p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/#">Privacy Policy</Link>
+          </li>
+          <li>
+            <Link to="/#">Terms & Conditions</Link>
+          </li>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <li>
+            <Link to="/">Meet the Team</Link>
+          </li>
+          <li>
+            <Link to="/#">Our Story</Link>
+          </li>
+          <li>
+            <Link to="/#">Career</Link>
+          </li>
+        </div>
+        <div>
+          <h4>Contacts</h4>
+          <p>
+            <Link to="/#">
+              301 Beza Building, Bole Sub City, Addis Ababa, Ethiopia
+            </Link>
+          </p>
+          <p>
+            <Link to="/#">+251 911 123 456</Link>
+          </p>
+          <p>
+            <Link to="/#">info@roader.com</Link>
+          </p>
+        </div>
+      </div>
+      <div className="flex justify-around items-center border-t border-gray-300 py-4">
+        <p className="text-left text-gray-500 text-sm">
+          &copy; {new Date().getFullYear()} Roader. All rights reserved.
+        </p>
+        <div className="flex gap-4">
+          <Link>
+            <FaFacebookSquare className="text-blue-600 hover:text-blue-800" />
+          </Link>
+          <Link>
+            <FaInstagramSquare className="text-blue-600 hover:text-blue-800" />
+          </Link>
+          <Link>
+            <FaSquareXTwitter className="text-blue-600 hover:text-blue-800" />
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Footer;
