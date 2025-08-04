@@ -9,7 +9,7 @@ function Footer() {
   return (
     <div className="bg-gray-900 text-white p-10">
       <div className="flex flex-wrap justify-evenly items-start mb-10">
-        <div className="w-[80%] md:w-1/4">
+        <div className="w-[80%] md:w-1/4 mb-5">
           <h4 className="text-xl font-bold">Roader</h4>
           <p className="leading-7 text-sm">
             Roader is an innovative new entrant into the ride-hailing market in
@@ -18,7 +18,7 @@ function Footer() {
             passengers and drivers.
           </p>
         </div>
-        <div className="w-[80%] md:w-1/5">
+        <div className="w-[80%] md:w-1/5 mb-5">
           <h4 className="text-xl font-semibold mb-2.5">Quick Links</h4>
           <li className="mb-2.5 list-none">
             <Link to="/">Home</Link>
@@ -30,7 +30,7 @@ function Footer() {
             <Link to="/#">Terms & Conditions</Link>
           </li>
         </div>
-        <div className="w-[80%] md:w-1/5">
+        <div className="w-[80%] md:w-1/5 mb-5">
           <h4 className="text-xl font-semibold mb-2.5">About Us</h4>
           <li className="mb-2.5 list-none">
             <Link to="/">Meet the Team</Link>
@@ -63,13 +63,13 @@ function Footer() {
         </p>
         <div className="flex gap-4">
           <Link>
-            <FaFacebookSquare className="text-blue-600 hover:text-blue-800" />
+            <FaFacebookSquare className="text-white hover:text-blue-800 text-2xl" />
           </Link>
           <Link>
-            <FaInstagramSquare className="text-blue-600 hover:text-blue-800" />
+            <FaInstagramSquare className="text-white hover:text-blue-800 text-2xl" />
           </Link>
           <Link>
-            <FaSquareXTwitter className="text-blue-600 hover:text-blue-800" />
+            <FaSquareXTwitter className="text-white hover:text-blue-800 text-2xl" />
           </Link>
         </div>
       </div>
