@@ -7,10 +7,10 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
-    <div>
-      <div className="flex flex-wrap justify-around items-start bg-gray-100 p-10">
+    <div className="bg-gray-900 text-white p-10">
+      <div className="flex flex-wrap justify-evenly items-start mb-10">
         <div className="w-[80%] md:w-1/4">
-          <h4 className="text-xl font-bold text-green-800">Roader</h4>
+          <h4 className="text-xl font-bold">Roader</h4>
           <p className="leading-7 text-sm">
             Roader is an innovative new entrant into the ride-hailing market in
             East Africa. Operated and owned by Africans for Africans. Roader
@@ -18,38 +18,38 @@ function Footer() {
             passengers and drivers.
           </p>
         </div>
-        <div>
-          <h4>Quick Links</h4>
-          <li>
+        <div className="w-[80%] md:w-1/5">
+          <h4 className="text-xl font-semibold mb-2.5">Quick Links</h4>
+          <li className="mb-2.5 list-none">
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className="mb-2.5 list-none">
             <Link to="/#">Privacy Policy</Link>
           </li>
-          <li>
+          <li className="mb-2.5 list-none">
             <Link to="/#">Terms & Conditions</Link>
           </li>
         </div>
-        <div>
-          <h4>Quick Links</h4>
-          <li>
+        <div className="w-[80%] md:w-1/5">
+          <h4 className="text-xl font-semibold mb-2.5">About Us</h4>
+          <li className="mb-2.5 list-none">
             <Link to="/">Meet the Team</Link>
           </li>
-          <li>
+          <li className="mb-2.5 list-none">
             <Link to="/#">Our Story</Link>
           </li>
-          <li>
+          <li className="mb-2.5 list-none">
             <Link to="/#">Career</Link>
           </li>
         </div>
-        <div>
-          <h4>Contacts</h4>
-          <p>
+        <div className="w-[80%] md:w-1/5">
+          <h4 className="text-xl font-semibold mb-2.5">Contacts</h4>
+          <p className="mb-2.5">
             <Link to="/#">
               301 Beza Building, Bole Sub City, Addis Ababa, Ethiopia
             </Link>
           </p>
-          <p>
+          <p className="mb-2.5">
             <Link to="/#">+251 911 123 456</Link>
           </p>
           <p>
