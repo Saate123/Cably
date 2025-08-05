@@ -6,18 +6,19 @@ import HeroImg from "../assets/Group 5975.png";
 function Hero() {
   return (
     <div
+      id="home"
       className="flex flex-col-reverse md:flex-row items-center justify-around px-0 py-10 md:py-20 w-full"
       style={{
-        background: "conic-gradient( #6ee7b7, #34d399, #6ee7b7, #34d399)",
+        background: "conic-gradient( #a958e2, #9524e5, #a958e2, #9524e5)",
       }}
     >
       <div className="w-[90%] md:w-[500px] flex flex-col items-start space-y-6">
-        <h1 className="text-3xl md:text-6xl font-bold leading-tight text-gray-900 mb-2">
+        <h1 className="text-3xl md:text-6xl font-bold leading-tight text-black mb-2">
           Download app, Start Drive, Earn Money!
         </h1>
-        <p className="text-base md:text-lg text-gray-600 mb-4">
-          Download Roader driver app from playstore, create account using your car and
-          drive by yourself. Get rides and earn more money.
+        <p className="text-base md:text-lg text-white mb-4">
+          Download Roader driver app from playstore, create account using your
+          car and drive by yourself. Get rides and earn more money.
         </p>
         <div className="flex space-x-4">
           <Link to="#">

@@ -1,5 +1,6 @@
 import AppWorks from "../component/AppWorks";
 import Download from "../component/Download";
+import FAQ from "../component/FAQ";
 import Footer from "../component/Footer";
 import Header from "../component/Header";
 import Hero from "../component/Hero";
@@ -13,6 +14,7 @@ function Home() {
       <HowItWorks />
       <AppWorks />
       <Download />
+      <FAQ />
       <Footer />
     </div>
   );

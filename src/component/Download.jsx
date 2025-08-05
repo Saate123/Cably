@@ -3,7 +3,7 @@ import Img from "../assets/Screenshot 2025-02-20 at 10.27.11.png";
 function Download() {
   return (
     <div className="flex flex-wrap justify-center mb-20 mt-10">
-      <div className="bg-green-800 w-[80%] flex flex-wrap justify-around items-center p-5 rounded-lg mt-10">
+      <div className="bg-[#a668d0] w-[80%] flex flex-wrap justify-around items-center p-5 rounded-lg mt-10">
         <div className="text-white w-[90%] md:w-1/2 mb-10">
           <h2 className="text-2xl text-left mb-5 font-bold">
             Download Roader App

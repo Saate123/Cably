@@ -1,100 +1,148 @@
 import { NavLink } from "react-router";
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
+import Img from "../assets/transparent-logo.png"
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   // Helper to set active link styles
   const getNavLinkClass = ({ isActive }) =>
-    `text-gray-700 hover:text-green-800 px-2 py-1 rounded transition text-center${
-      isActive ? " text-green-800 font-bold" : ""
+    `text-black hover:text-white px-2 py-1 rounded transition text-center${
+      isActive ? " text-white font-bold" : ""
     }`;
 
   return (
-    <header className="bg-white shadow-md px-4 py-3 sticky top-0">
+    <header className="bg-purple-700 shadow-md px-4 py-3 sticky top-0">
       <div className="max-w-7xl mx-auto flex items-center justify-between lg:justify-around">
-        <h4 className="text-xl font-bold text-green-800">Roader</h4>
+        <img src={Img} alt="" className="w-[50px]" />
+
         {/* Mobile menu icon */}
         <button
-          className="md:hidden text-2xl text-green-800"
+          className="md:hidden text-3xl text-white"
           onClick={() => setMenuOpen((prev) => !prev)}
           aria-label="Toggle menu"
         >
           {menuOpen ? <FiX /> : <FiMenu />}
         </button>
-        {/* Desktop nav */}
+        {/* Desktop navigation */}
         <nav className="hidden md:flex flex-row gap-6 items-center">
-          <NavLink to="/" className={getNavLinkClass}>
-            Home
-          </NavLink>
-          <NavLink to="/riders" className={getNavLinkClass}>
-            Riders
-          </NavLink>
-          <NavLink to="/drivers" className={getNavLinkClass}>
-            Drivers
-          </NavLink>
-          <NavLink to="/about" className={getNavLinkClass}>
-            About Us
-          </NavLink>
-          <NavLink to="/faq" className={getNavLinkClass}>
-            FAQ
-          </NavLink>
-          <button className="bg-green-800 text-white px-4 py-1 rounded hover:bg-blue-700 transition text-center">
-            Help Center
-          </button>
-        </nav>
-      </div>
-      {/* Mobile nav */}
-      {menuOpen && (
-        <nav className="md:hidden flex flex-col gap-2 mt-3 items-center">
           <NavLink
             to="/"
-            className={({ isActive }) =>
-              getNavLinkClass({ isActive }) + " w-full"
-            }
-            onClick={() => setMenuOpen(false)}
+            className={({ isActive }) => getNavLinkClass({ isActive })}
+            onClick={(e) => {
+              e.preventDefault();
+              // Set active class manually for scroll navigation
+              document
+                .querySelectorAll(".text-white.font-bold")
+                .forEach((el) => {
+                  el.classList.remove("text-white", "font-bold");
+                });
+              e.currentTarget.classList.add("text-white", "font-bold");
+              const section = document.getElementById("home");
+              if (section) section.scrollIntoView({ behavior: "smooth" });
+            }}
           >
             Home
           </NavLink>
           <NavLink
             to="/riders"
-            className={({ isActive }) =>
-              getNavLinkClass({ isActive }) + " w-full"
-            }
-            onClick={() => setMenuOpen(false)}
+            className={({ isActive }) => getNavLinkClass({ isActive })}
+            onClick={(e) => {
+              e.preventDefault();
+              // Set active class manually for scroll navigation
+              document
+                .querySelectorAll(".text-white.font-bold")
+                .forEach((el) => {
+                  el.classList.remove("text-white", "font-bold");
+                });
+              e.currentTarget.classList.add("text-white", "font-bold");
+              const section = document.getElementById("riders");
+              if (section) section.scrollIntoView({ behavior: "smooth" });
+            }}
           >
-            Riders
-          </NavLink>
-          <NavLink
-            to="/drivers"
-            className={({ isActive }) =>
-              getNavLinkClass({ isActive }) + " w-full"
-            }
-            onClick={() => setMenuOpen(false)}
-          >
-            Drivers
-          </NavLink>
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              getNavLinkClass({ isActive }) + " w-full"
-            }
-            onClick={() => setMenuOpen(false)}
-          >
-            About Us
+            Riders / Drivers
           </NavLink>
           <NavLink
             to="/faq"
-            className={({ isActive }) =>
-              getNavLinkClass({ isActive }) + " w-full"
-            }
-            onClick={() => setMenuOpen(false)}
+            className={({ isActive }) => getNavLinkClass({ isActive })}
+            onClick={(e) => {
+              e.preventDefault();
+              // Set active class manually for scroll navigation
+              document
+                .querySelectorAll(".text-white.font-bold")
+                .forEach((el) => {
+                  el.classList.remove("text-white", "font-bold");
+                });
+              e.currentTarget.classList.add("text-white", "font-bold");
+              const section = document.getElementById("faq");
+              if (section) section.scrollIntoView({ behavior: "smooth" });
+            }}
           >
             FAQ
           </NavLink>
-          <button className="bg-green-800 text-white px-4 py-1 rounded hover:bg-blue-700 transition w-full text-center">
-            Help Center
+          <button className="bg-purple-900 text-white font-semibold px-4 py-1 rounded hover:bg-purple-100 hover:text-purple-800 transition text-center">
+            <NavLink to="/help">Help Center</NavLink>
+          </button>
+        </nav>
+      </div>
+      {menuOpen && (
+        <nav className="md:hidden flex flex-col gap-2 mt-3 items-center">
+          <NavLink
+            className={({ isActive }) => getNavLinkClass({ isActive })}
+            onClick={(e) => {
+              e.preventDefault();
+              // Set active class manually for scroll navigation
+              document
+                .querySelectorAll(".text-white.font-bold")
+                .forEach((el) => {
+                  el.classList.remove("text-white", "font-bold");
+                });
+              e.currentTarget.classList.add("text-white", "font-bold");
+              const section = document.getElementById("home");
+              if (section) section.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/riders"
+            className={({ isActive }) => getNavLinkClass({ isActive })}
+            onClick={(e) => {
+              e.preventDefault();
+              // Set active class manually for scroll navigation
+              document
+                .querySelectorAll(".text-white.font-bold")
+                .forEach((el) => {
+                  el.classList.remove("text-white", "font-bold");
+                });
+              e.currentTarget.classList.add("text-white", "font-bold");
+              const section = document.getElementById("riders");
+              if (section) section.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Riders / Drivers
+          </NavLink>
+          <NavLink
+            to="/faq"
+            className={({ isActive }) => getNavLinkClass({ isActive })}
+            onClick={(e) => {
+              e.preventDefault();
+              // Set active class manually for scroll navigation
+              document
+                .querySelectorAll(".text-white.font-bold")
+                .forEach((el) => {
+                  el.classList.remove("text-white", "font-bold");
+                });
+              e.currentTarget.classList.add("text-white", "font-bold");
+              const section = document.getElementById("faq");
+              if (section) section.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            FAQ
+          </NavLink>
+          <button className="bg-purple-900 text-white font-semibold px-4 py-1 rounded hover:bg-purple-100 hover:text-purple-800 transition text-center">
+            <NavLink to="/help">Help Center</NavLink>
           </button>
         </nav>
       )}
