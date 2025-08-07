@@ -5,7 +5,12 @@ function HelpCenter() {
   return (
     <div>
       <Header />
-      <main></main>
+      <main>
+        <form action="">
+          <label htmlFor="help-topic">Help Topic:</label>
+          <input type="text" id="help-topic" name="help-topic" />
+        </form>
+      </main>
       <Footer />
     </div>
   )
