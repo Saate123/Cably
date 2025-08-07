@@ -1,7 +1,7 @@
 import { NavLink } from "react-router";
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import Img from "../assets/transparent-logo.png"
+import Img from "../assets/transparent-logo.png";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,8 +15,9 @@ function Header() {
   return (
     <header className="bg-purple-700 shadow-md px-4 py-3 sticky top-0">
       <div className="max-w-7xl mx-auto flex items-center justify-between lg:justify-around">
-        <img src={Img} alt="" className="w-[50px]" />
-
+        <NavLink to="/">
+          <img src={Img} alt="" className="w-[50px]" />
+        </NavLink>
         {/* Mobile menu icon */}
         <button
           className="md:hidden text-3xl text-white"
@@ -25,23 +26,12 @@ function Header() {
         >
           {menuOpen ? <FiX /> : <FiMenu />}
         </button>
-        {/* Desktop navigation */}
+
         <nav className="hidden md:flex flex-row gap-6 items-center">
           <NavLink
             to="/"
             className={({ isActive }) => getNavLinkClass({ isActive })}
-            onClick={(e) => {
-              e.preventDefault();
-              // Set active class manually for scroll navigation
-              document
-                .querySelectorAll(".text-white.font-bold")
-                .forEach((el) => {
-                  el.classList.remove("text-white", "font-bold");
-                });
-              e.currentTarget.classList.add("text-white", "font-bold");
-              const section = document.getElementById("home");
-              if (section) section.scrollIntoView({ behavior: "smooth" });
-            }}
+            // Home should refresh the page
           >
             Home
           </NavLink>
@@ -61,7 +51,7 @@ function Header() {
               if (section) section.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            Riders / Drivers
+            Passengers / Drivers
           </NavLink>
           <NavLink
             to="/faq"
@@ -89,19 +79,9 @@ function Header() {
       {menuOpen && (
         <nav className="md:hidden flex flex-col gap-2 mt-3 items-center">
           <NavLink
+            to="/"
             className={({ isActive }) => getNavLinkClass({ isActive })}
-            onClick={(e) => {
-              e.preventDefault();
-              // Set active class manually for scroll navigation
-              document
-                .querySelectorAll(".text-white.font-bold")
-                .forEach((el) => {
-                  el.classList.remove("text-white", "font-bold");
-                });
-              e.currentTarget.classList.add("text-white", "font-bold");
-              const section = document.getElementById("home");
-              if (section) section.scrollIntoView({ behavior: "smooth" });
-            }}
+            // Home should refresh the page
           >
             Home
           </NavLink>
@@ -110,6 +90,7 @@ function Header() {
             className={({ isActive }) => getNavLinkClass({ isActive })}
             onClick={(e) => {
               e.preventDefault();
+              setMenuOpen(false);
               // Set active class manually for scroll navigation
               document
                 .querySelectorAll(".text-white.font-bold")
@@ -128,6 +109,7 @@ function Header() {
             className={({ isActive }) => getNavLinkClass({ isActive })}
             onClick={(e) => {
               e.preventDefault();
+              setMenuOpen(false);
               // Set active class manually for scroll navigation
               document
                 .querySelectorAll(".text-white.font-bold")

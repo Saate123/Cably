@@ -1,4 +1,7 @@
 import Img from "../assets/Screenshot 2025-02-20 at 10.27.11.png";
+import Img1 from "../assets/googleplay.bc4400ce.svg";
+import Img2 from "../assets/appstore.50df6f67.svg";
+import { Link } from "react-router-dom";
 
 function Download() {
   return (
@@ -6,19 +9,32 @@ function Download() {
       <div className="bg-[#a668d0] w-[80%] flex flex-wrap justify-around items-center p-5 rounded-lg mt-10">
         <div className="text-white w-[90%] md:w-1/2 mb-10">
           <h2 className="text-2xl text-left mb-5 font-bold">
-            Download Roader App
+            Download the Cably App
           </h2>
+          <p className="italic mb-5">Your Ride. Your Terms. Your Africa.</p>
           <p className="leading-7">
-            Roader is an innovative new entrant into the ride-hailing market in
-            East Africa. Operated and owned by Africans for Africans. Roader
-            brings local creativity and insights to improve the experience of
-            passengers and drivers. Whether you need to get where you are going
-            fast or looking to make money on your schedule, Roader provides the
-            best solutions.
+            Cably is an innovative new entrant into Africa’s ride-hailing
+            market, designed to democratize e-hailing for both drivers and
+            passengers. Whether you’re heading to work, running errands, or
+            exploring the city, Cably puts affordable, reliable, and transparent
+            transportation at your fingertips.
           </p>
-          <button className="bg-black text-white py-2 px-4 rounded-lg mt-10 font-bold">
-            Get Started
-          </button>
+          <div className="flex space-x-4 mt-10">
+            <Link to="#">
+              <img
+                src={Img1}
+                alt="Google Play Store"
+                className="h-12 w-auto md:h-14 transition-transform hover:scale-105"
+              />
+            </Link>
+            <Link to="#">
+              <img
+                src={Img2}
+                alt="App Store"
+                className="h-12 w-auto md:h-14 transition-transform hover:scale-105"
+              />
+            </Link>
+          </div>
         </div>
         <div className="w-[80%] md:w-[200px]">
           <img src={Img} alt="" className="w-full" />

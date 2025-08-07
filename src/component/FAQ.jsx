@@ -10,56 +10,63 @@ function FAQ() {
       <div className="max-w-4xl mx-auto p-6 rounded-lg gap-9">
         <details className="mt-4 shadow-md p-2.5">
           <summary className="text-lg font-semibold text-#841dc8">
-            What is the purpose of this app?
+            What is Cably and how does it work?
           </summary>
           <p className="text-black">
-            This app connects drivers with passengers looking for rides, making
-            it easier to find and offer transportation.
+            Cably is a ride-hailing platform built for Africa. It connects
+            riders with nearby drivers through a mobile app, offering safe,
+            reliable, and affordable rides on demand.
           </p>
         </details>
         <details className="mt-4 shadow-md p-2.5">
           <summary className="text-lg font-semibold text-#841dc8">
-            How do I create an account?
+            How do I become a Cably driver?
           </summary>
           <p className="text-black">
-            You can create an account by downloading the app and following the
-            on-screen instructions to sign up.
+            To become a Cably driver, simply download the Cably Driver app, sign
+            up, choose your preferred subscription package, upload the required
+            documents, and get verified. Once approved, you can start receiving
+            ride requests.
           </p>
         </details>
         <details className="mt-4 shadow-md p-2.5">
           <summary className="text-lg font-semibold text-#841dc8">
-            Is there a fee for using the app?
+            What are the payment options available on Cably?
           </summary>
           <p className="text-black">
-            There may be fees associated with rides, but using the app itself is
-            free.
+            Cably supports both cash and digital payments (card, wallet, etc.).
+            Riders can choose their preferred payment method before or after the
+            trip.
           </p>
         </details>
         <details className="mt-4 shadow-md p-2.5">
           <summary className="text-lg font-semibold text-#841dc8">
-            Is there a fee for using the app?
+            Does Cably charge commission on rides?
           </summary>
           <p className="text-black">
-            There may be fees associated with rides, but using the app itself is
-            free.
+            No, Cably operates on a subscription-based model for drivers,
+            meaning drivers keep 100% of their earnings. No commissions are
+            deducted per trip.
           </p>
         </details>
         <details className="mt-4 shadow-md p-2.5">
           <summary className="text-lg font-semibold text-#841dc8">
-            Is there a fee for using the app?
+            Is Cably available in my city?
           </summary>
           <p className="text-black">
-            There may be fees associated with rides, but using the app itself is
-            free.
+            Cably is currently launching in select cities across Africa. You can
+            check the app or website for a list of active locations and upcoming
+            cities.
           </p>
         </details>
         <details className="mt-4 shadow-md p-2.5">
           <summary className="text-lg font-semibold text-#841dc8">
-            Is there a fee for using the app?
+            How safe is it to ride or drive with Cably?
           </summary>
           <p className="text-black">
-            There may be fees associated with rides, but using the app itself is
-            free.
+            Safety is our top priority. All drivers are thoroughly verified,
+            trips are GPS-tracked, and there’s an in-app emergency button for
+            both drivers and riders to ensure quick response if needed.
           </p>
         </details>
       </div>

@@ -11,11 +11,11 @@ function AppWorks() {
     <div id="riders" className="flex flex-wrap justify-center mt-10">
       <div className="w-[90%]">
         <h2 className="text-2xl text-center mb-2.5 font-bold text-[#841dc8]">
-          How does this app work
+          Why They Like Cably
         </h2>
         <p className="text-base md:text-md text-gray-600 mb-4 text-center">
-          Download catch driver app from playstore, create account using your
-          car and <br /> drive by yourself. Get rides and earn more money.
+          Download Cably app from playstore, create account using your car and{" "}
+          <br /> drive by yourself. Get rides and earn more money.
         </p>
       </div>
       <div className="flex justify-center mb-4 bg-purple-100 rounded-lg items-center w-[220px] h-12 ">
@@ -53,11 +53,11 @@ function AppWorks() {
               <BsEnvelopeArrowDownFill className="text-[#841dc8] text-[36px] bg-purple-100 p-2 rounded-lg" />
               <div>
                 <h5 className="text-lg text-[#841dc8] font-bold">
-                  Receive Offer
+                  Keep More of Your Earnings
                 </h5>
                 <p>
-                  You specify your details. Simply key in your information and
-                  let us know what type of ride you need.
+                  No commissions. Just one low subscription and everything you
+                  earn is yours.
                 </p>
               </div>
             </div>
@@ -65,21 +65,23 @@ function AppWorks() {
               <BsBuildingFillCheck className="text-[#841dc8] text-[36px] bg-purple-100 p-2 rounded-lg" />
               <div>
                 <h5 className="text-lg text-[#841dc8] font-bold">
-                  Accept Offer
+                  Drive on Your Own Terms
                 </h5>
                 <p>
-                  The Q-garage app will help you with valuations and locations
-                  of garages.
+                  Whether it’s part-time or full-time, choose when and how long
+                  you work.
                 </p>
               </div>
             </div>
             <div className="md:w-[40%]">
               <FaCarSide className="text-[#841dc8] text-[36px] bg-purple-100 p-2 rounded-lg" />
               <div>
-                <h5 className="text-lg text-[#841dc8] font-bold">Start Trip</h5>
+                <h5 className="text-lg text-[#841dc8] font-bold">
+                  Transparent & Reliable
+                </h5>
                 <p>
-                  Its just down to you to select your garage and the option that
-                  best suits you.
+                  No hidden charges, no surprises. Just a platform that puts
+                  drivers first.
                 </p>
               </div>
             </div>
@@ -96,31 +98,35 @@ function AppWorks() {
               <BsEnvelopeArrowDownFill className="text-[#841dc8] text-[36px] bg-purple-100 p-2 rounded-lg" />
               <div>
                 <h5 className="text-lg text-[#841dc8] font-bold">
-                  Receive Offer
+                  Affordable & Transparent
                 </h5>
                 <p>
-                  You specify your details. Simply key in your information and
-                  let us know what type of ride you need.
+                  Enjoy fair pricing with no hidden fees — what you see is what
+                  you pay
                 </p>
               </div>
             </div>
             <div className="md:w-[40%]">
               <BsBuildingFillCheck className="text-[#841dc8] text-[36px] bg-purple-100 p-2 rounded-lg" />
               <div>
-                <h5 className="text-lg text-[#841dc8] font-bold">Accept Offer</h5>
+                <h5 className="text-lg text-[#841dc8] font-bold">
+                  Fast, Reliable Pickups
+                </h5>
                 <p>
-                  The Q-garage app will help you with valuations and locations
-                  of garages.
+                  Cably connects you with the nearest driver for quicker rides,
+                  every time.
                 </p>
               </div>
             </div>
             <div className="md:w-[40%]">
               <FaCarSide className="text-[#841dc8] text-[36px] bg-purple-100 p-2 rounded-lg" />
               <div>
-                <h5 className="text-lg text-[#841dc8] font-bold">Start Trip</h5>
+                <h5 className="text-lg text-[#841dc8] font-bold">
+                  Real-Time Tracking
+                </h5>
                 <p>
-                  Its just down to you to select your garage and the option that
-                  best suits you.
+                  Track your driver’s location and estimated arrival with live
+                  GPS updates.
                 </p>
               </div>
             </div>
