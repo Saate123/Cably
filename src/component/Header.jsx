@@ -83,7 +83,7 @@ function Header() {
               window.scrollTo(0, 0);
             }}
           >
-            Help Center
+            <NavLink to="/help">Help Center</NavLink>
           </button>
         </nav>
       </div>
@@ -147,7 +147,7 @@ function Header() {
               setMenuOpen(false);
             }}
           >
-            Help Center
+            <NavLink to="/help">Help Center</NavLink>
           </button>
         </nav>
       )}
