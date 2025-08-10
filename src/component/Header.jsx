@@ -76,15 +76,16 @@ function Header() {
           >
             FAQ
           </NavLink>
-          <button
+          <NavLink
+            to="/help"
             className="bg-purple-900 text-white font-semibold px-4 py-1 rounded hover:bg-purple-100 hover:text-purple-800 transition text-center"
             onClick={() => {
               window.location.href = "/help";
               window.scrollTo(0, 0);
             }}
           >
-            <NavLink to="/help">Help Center</NavLink>
-          </button>
+            Help Center
+          </NavLink>
         </nav>
       </div>
       {menuOpen && (
@@ -139,7 +140,9 @@ function Header() {
           >
             FAQ
           </NavLink>
-          <button
+
+          <NavLink
+            to="/help"
             className="bg-purple-900 text-white font-semibold px-4 py-1 rounded hover:bg-purple-100 hover:text-purple-800 transition text-center"
             onClick={() => {
               window.location.href = "/help";
@@ -147,8 +150,8 @@ function Header() {
               setMenuOpen(false);
             }}
           >
-            <NavLink to="/help">Help Center</NavLink>
-          </button>
+            Help Center
+          </NavLink>
         </nav>
       )}
     </header>
