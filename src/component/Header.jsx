@@ -80,7 +80,6 @@ function Header() {
             to="/help"
             className="bg-purple-900 text-white font-semibold px-4 py-1 rounded hover:bg-purple-100 hover:text-purple-800 transition text-center"
             onClick={() => {
-              window.location.href = "/help";
               window.scrollTo(0, 0);
             }}
           >
@@ -145,9 +144,7 @@ function Header() {
             to="/help"
             className="bg-purple-900 text-white font-semibold px-4 py-1 rounded hover:bg-purple-100 hover:text-purple-800 transition text-center"
             onClick={() => {
-              window.location.href = "/help";
               window.scrollTo(0, 0);
-              setMenuOpen(false);
             }}
           >
             Help Center
