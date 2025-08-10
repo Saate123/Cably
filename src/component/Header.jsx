@@ -31,7 +31,12 @@ function Header() {
           <NavLink
             to="/"
             className={({ isActive }) => getNavLinkClass({ isActive })}
-            // Home should refresh the page
+            onClick={() => {
+              if (window.location.pathname === "/help") {
+                window.location.href = "/";
+                window.scrollTo(0, 0);
+              }
+            }}
           >
             Home
           </NavLink>
@@ -71,8 +76,14 @@ function Header() {
           >
             FAQ
           </NavLink>
-          <button className="bg-purple-900 text-white font-semibold px-4 py-1 rounded hover:bg-purple-100 hover:text-purple-800 transition text-center">
-            <NavLink to="/help">Help Center</NavLink>
+          <button
+            className="bg-purple-900 text-white font-semibold px-4 py-1 rounded hover:bg-purple-100 hover:text-purple-800 transition text-center"
+            onClick={() => {
+              window.location.href = "/help";
+              window.scrollTo(0, 0);
+            }}
+          >
+            Help Center
           </button>
         </nav>
       </div>
@@ -81,7 +92,12 @@ function Header() {
           <NavLink
             to="/"
             className={({ isActive }) => getNavLinkClass({ isActive })}
-            // Home should refresh the page
+            onClick={() => {
+              if (window.location.pathname === "/help") {
+                window.location.href = "/";
+                window.scrollTo(0, 0);
+              }
+            }}
           >
             Home
           </NavLink>
@@ -123,8 +139,15 @@ function Header() {
           >
             FAQ
           </NavLink>
-          <button className="bg-purple-900 text-white font-semibold px-4 py-1 rounded hover:bg-purple-100 hover:text-purple-800 transition text-center">
-            <NavLink to="/help">Help Center</NavLink>
+          <button
+            className="bg-purple-900 text-white font-semibold px-4 py-1 rounded hover:bg-purple-100 hover:text-purple-800 transition text-center"
+            onClick={() => {
+              window.location.href = "/help";
+              window.scrollTo(0, 0);
+              setMenuOpen(false);
+            }}
+          >
+            Help Center
           </button>
         </nav>
       )}

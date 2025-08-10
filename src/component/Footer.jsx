@@ -19,27 +19,51 @@ function Footer() {
         <div className="w-[90%] md:w-1/5 mb-5">
           <h4 className="text-xl font-semibold mb-2.5">Quick Links</h4>
           <li className="mb-2.5 list-none">
-            <Link to="/">Home</Link>
+            <Link
+              to="/"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            >
+              Home
+            </Link>
           </li>
           <li className="mb-2.5 list-none">
-            <Link to="/#">Privacy Policy</Link>
+            <Link
+              to="/privacy"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            >
+              Privacy Policy
+            </Link>
           </li>
           <li className="mb-2.5 list-none">
-            <Link to="/#">Terms & Conditions</Link>
+            <Link
+              to="/terms"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            >
+              Terms & Conditions
+            </Link>
           </li>
         </div>
-        <div className="w-[90%] md:w-1/5">
+        <div className="w-[90%] md:w-1/4">
           <h4 className="text-xl font-semibold mb-2.5">Contacts</h4>
           <p className="mb-2.5">
-            <Link to="/#">
-              301 Beza Building, Bole Sub City, Addis Ababa, Ethiopia
+            <Link
+              to="https://maps.app.goo.gl/6iUynVXFvnRYZx5V9"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Elzazi complex, Opposite Westharm petrol station along
+              gbalajam/Akpajo road, woji ( Odili Road, Port-Harcourt )
             </Link>
           </p>
-          <p className="mb-2.5">
-            <Link to="/#">+251 911 123 456</Link>
-          </p>
+          <p className="mb-2.5">+2349011684637</p>
           <p>
-            <Link to="/#">info@roader.com</Link>
+            <Link to="mailto:Hello@harvoxx.com">Hello@harvoxx.com</Link>
           </p>
         </div>
       </div>
