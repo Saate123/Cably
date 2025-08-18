@@ -1,8 +1,12 @@
 import React from "react";
-import Img from "../assets/Group 9 (1).png";
-import Img2 from "../assets/Screenshot 2025-02-20 at 10.55.15 1.png";
-import { BsEnvelopeArrowDownFill, BsBuildingFillCheck } from "react-icons/bs";
-import { FaCarSide } from "react-icons/fa";
+import Img from "../assets/CABLY MOCKUP DRIVER.png";
+import Img2 from "../assets/CABLY MOCKUP MIDDLE.png";
+import { GrMoney } from "react-icons/gr";
+import { MdBluetoothDrive } from "react-icons/md";
+import { PiCubeTransparentFill } from "react-icons/pi";
+import { GiTakeMyMoney } from "react-icons/gi";
+import { MdSpatialTracking } from "react-icons/md";
+import { FaShippingFast  } from "react-icons/fa";
 
 function AppWorks() {
   const [activeTab, setActiveTab] = React.useState("Driver");
@@ -50,7 +54,7 @@ function AppWorks() {
           </div>
           <div className="w-[90%] md:w-1/3 flex flex-wrap justify-left gap-8">
             <div className="md:w-[40%] md:mr-5">
-              <BsEnvelopeArrowDownFill className="text-[#841dc8] text-[36px] bg-purple-100 p-2 rounded-lg" />
+              <GrMoney className="text-[#841dc8] text-[36px] bg-purple-100 p-2 rounded-lg" />
               <div>
                 <h5 className="text-lg text-[#841dc8] font-bold">
                   Keep More of Your Earnings
@@ -62,7 +66,7 @@ function AppWorks() {
               </div>
             </div>
             <div className="md:w-[40%]">
-              <BsBuildingFillCheck className="text-[#841dc8] text-[36px] bg-purple-100 p-2 rounded-lg" />
+              <MdBluetoothDrive className="text-[#841dc8] text-[36px] bg-purple-100 p-2 rounded-lg" />
               <div>
                 <h5 className="text-lg text-[#841dc8] font-bold">
                   Drive on Your Own Terms
@@ -74,7 +78,7 @@ function AppWorks() {
               </div>
             </div>
             <div className="md:w-[40%]">
-              <FaCarSide className="text-[#841dc8] text-[36px] bg-purple-100 p-2 rounded-lg" />
+              <PiCubeTransparentFill className="text-[#841dc8] text-[36px] bg-purple-100 p-2 rounded-lg" />
               <div>
                 <h5 className="text-lg text-[#841dc8] font-bold">
                   Transparent & Reliable
@@ -95,7 +99,7 @@ function AppWorks() {
           </div>
           <div className="w-[90%] md:w-1/3 flex flex-wrap justify-left gap-8">
             <div className="md:w-[40%] md:mr-5">
-              <BsEnvelopeArrowDownFill className="text-[#841dc8] text-[36px] bg-purple-100 p-2 rounded-lg" />
+              <GiTakeMyMoney className="text-[#841dc8] text-[36px] bg-purple-100 p-2 rounded-lg" />
               <div>
                 <h5 className="text-lg text-[#841dc8] font-bold">
                   Affordable & Transparent
@@ -107,7 +111,7 @@ function AppWorks() {
               </div>
             </div>
             <div className="md:w-[40%]">
-              <BsBuildingFillCheck className="text-[#841dc8] text-[36px] bg-purple-100 p-2 rounded-lg" />
+              <FaShippingFast className="text-[#841dc8] text-[36px] bg-purple-100 p-2 rounded-lg" />
               <div>
                 <h5 className="text-lg text-[#841dc8] font-bold">
                   Fast, Reliable Pickups
@@ -119,7 +123,7 @@ function AppWorks() {
               </div>
             </div>
             <div className="md:w-[40%]">
-              <FaCarSide className="text-[#841dc8] text-[36px] bg-purple-100 p-2 rounded-lg" />
+              <MdSpatialTracking className="text-[#841dc8] text-[36px] bg-purple-100 p-2 rounded-lg" />
               <div>
                 <h5 className="text-lg text-[#841dc8] font-bold">
                   Real-Time Tracking

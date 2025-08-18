@@ -1,4 +1,4 @@
-import Img from "../assets/Screenshot 2025-02-20 at 10.27.11.png";
+import Img from "../assets/CABLY MOCKUP 1.png";
 import Img1 from "../assets/googleplay.bc4400ce.svg";
 import Img2 from "../assets/appstore.50df6f67.svg";
 import { Link } from "react-router-dom";

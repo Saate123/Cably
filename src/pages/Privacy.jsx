@@ -51,7 +51,7 @@ function Privacy() {
           </ul>
           <h2 className="text-xl font-semibold mt-8 mb-4 text-gray-800">Contact Us</h2>
           <p className="text-gray-700">
-            If you have questions about this Privacy Policy or your data, please contact us at <a href="mailto:support@cably.com" className="text-blue-600 underline">support@cably.com</a>.
+            If you have questions about this Privacy Policy or your data, please contact us at <a href="mailto:Hello@mycably.com" className="text-blue-600 underline">Hello@mycably.com</a>.
           </p>
         </section>
       </main>

@@ -63,7 +63,7 @@ function Terms() {
         <section className="mb-6">
           <h2 className="text-xl font-semibold mb-2 text-gray-700">9. Contact Us</h2>
           <p className="text-gray-600">
-            For questions or concerns regarding these Terms &amp; Conditions, please contact us at <a href="mailto:support@cably.com" className="text-blue-600 underline">support@cably.com</a>.
+            For questions or concerns regarding these Terms &amp; Conditions, please contact us at <a href="mailto:Hello@mycably.com" className="text-blue-600 underline">Hello@mycably.com</a>.
           </p>
         </section>
       </main>

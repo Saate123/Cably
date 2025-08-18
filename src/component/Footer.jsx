@@ -63,7 +63,7 @@ function Footer() {
           </p>
           <p className="mb-2.5">+2349011684637</p>
           <p>
-            <Link to="mailto:Hello@harvoxx.com">Hello@harvoxx.com</Link>
+            <Link to="mailto:Hello@mycably.com">Hello@mycably.com</Link>
           </p>
         </div>
       </div>

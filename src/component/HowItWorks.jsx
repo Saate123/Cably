@@ -1,6 +1,6 @@
-import Img from "../assets/Screenshot 2025-02-20 at 10.55.15 1.png";
+import Img from "../assets/CABLY MOCKUP main.png";
 import React from "react";
-import Img2 from "../assets/Screenshot 2025-02-20 at 10.27.11.png"
+import Img2 from "../assets/CABLY MOCKUP 2.png"
 
 function HowItWorks() {
   const [activeTab, setActiveTab] = React.useState("Passenger");

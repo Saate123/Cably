@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Img from "../assets/googleplay.bc4400ce.svg";
 import Img2 from "../assets/appstore.50df6f67.svg";
-import HeroImg from "../assets/Group 5975.png";
+import HeroImg from "../assets/CABLY MOCKUP.png";
 import { ReactTyped } from "react-typed";
 
 function Hero() {
